@@ -7,32 +7,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <LinearLayout
-        android:background="#f5f5f4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:background="#f5f5f4"
         android:gravity="center_horizontal"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <LinearLayout
+            android:id="@+id/hero_banner"
             android:layout_width="350dp"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:orientation="horizontal"
             android:gravity="center_vertical"
-            >
+            android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                >
-                <!-- aqui bota os texto payday e -->
+                android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/title_menu"
                     android:layout_width="150dp"
@@ -51,19 +50,263 @@
                     android:fontFamily="@font/inter"
                     android:text="Quinta-feira, 6 de agosto"
                     android:textColor="#000000"
+                    android:textFontWeight="900"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/icon_perfil"
+                android:id="@+id/icon_profile"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/baseline_person_24"
                 android:contentDescription="Ícone de perfil"
-                android:scaleType="fitCenter" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_person" />
         </LinearLayout>
 
+
+        <LinearLayout
+            android:id="@+id/subcontent_banner"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_rounded_green"
+            android:orientation="vertical"
+            android:radius="24dp">
+
+            <TextView
+                android:id="@+id/label_earned_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Ganho hoje"
+                android:textColor="#C0DD97"
+                android:textFontWeight="900"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/label_amount_earned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="R$: 24,21"
+                android:textColor="#ffffff"
+                android:textFontWeight="900"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Baseado no seu valor/hora · R$ 34,50"
+                android:textColor="#C0DD97"
+                android:textFontWeight="900"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/categories_main_content"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:radius="24dp">
+
+            <TextView
+                android:id="@+id/label_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categorias"
+                android:textColor="#000000"
+                android:textFontWeight="900"
+                android:textStyle="bold" />
+
+            <!-- Div card categoria café -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/category_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/ic_coffe"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_category_icon_coffe"
+                    android:contentDescription="Café"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_coffee"/>
+
+                <!-- Title + subtitle -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/label_coffe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="Cafés" />
+
+                    <TextView
+                        android:id="@+id/label_earned_today_coffe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#8A8A80"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="2x Hoje - R$: 10,00" />
+                </LinearLayout>
+
+                <!-- Green add button -->
+                <ImageButton
+                    android:id="@+id/btn_add_coffe"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_add_button"
+                    android:contentDescription="Add"
+                    android:src="@drawable/ic_add" />
+            </LinearLayout>
+            <!-- fim da div categoria café -->
+
+
+        <!-- div card Cagada remunerada  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/category_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/ic_roll"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_category_icon_roll"
+                    android:contentDescription="Rolo de papel higienico"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_roll" />
+
+                <!-- Title + subtitle -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/label_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="Cagada remunerada" />
+
+                    <TextView
+                        android:id="@+id/label_earned_today_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#8A8A80"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="2x Hoje - R$: 10,00" />
+                </LinearLayout>
+
+                <!-- Green add button -->
+                <ImageButton
+                    android:id="@+id/btn_add_pop"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_add_button"
+                    android:contentDescription="Add"
+                    android:src="@drawable/ic_add" />
+            </LinearLayout>
+            <!-- fim da div cagada remunerada -->
+
+            <!-- card Conversinha paralela -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/category_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/ic_chat"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_category_icon_chat"
+                    android:contentDescription="Balão de conversa"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_chat" />
+
+                <!-- Title + subtitle -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/label_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="Conversinha paralela" />
+
+                    <TextView
+                        android:id="@+id/label_earned_today_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#8A8A80"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="2x Hoje - R$: 10,00" />
+                </LinearLayout>
+
+                <!-- Green add button -->
+                <ImageButton
+                    android:id="@+id/btn_add_chat"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_add_button"
+                    android:contentDescription="Add"
+                    android:src="@drawable/ic_add" />
+            </LinearLayout>
+            <!-- fim da div conversinha paralela -->
+        </LinearLayout>
     </LinearLayout>
 
 
