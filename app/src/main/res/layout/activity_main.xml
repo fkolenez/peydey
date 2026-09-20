@@ -56,7 +56,7 @@
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/icon_profile"
+                android:id="@+id/ic_profile"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:contentDescription="Ícone de perfil"
