@@ -1,4 +1,4 @@
-package com.example.aula2;
+package com.example.peydey;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.peydey.HomePageActivity;
+import com.example.peydey.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,19 +28,20 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        EditText edituserName = findViewById(R.id.userName);
+        EditText edituserName = findViewById(R.id.username);
         EditText editpassword = findViewById(R.id.password);
-        Button buttonLogin = findViewById(R.id.buttonLogin);
+        Button buttonLogin = findViewById(R.id.btn_entrar);
 
         buttonLogin.setOnClickListener(v -> {
             String userName = edituserName.getText().toString().trim();
             String password = editpassword.getText().toString().trim();
 
-            if(userName.equals("Numquiditu") && password.equals("Numquiditu123")){
+            if (userName.equals("Numquiditu") && password.equals("Numquiditu123")) {
                 Intent intent = new Intent(MainActivity.this, HomePageActivity.class);
                 startActivity(intent);
-            }else{
-                Toast.makeText(this, "SE FODEU", Toast.LENGTH_SHORT).show();
+                finish(); // fecha o login para o botão "voltar" não trazer o usuário de volta pra cá
+            } else {
+                Toast.makeText(this, "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -21,7 +21,7 @@
             android:orientation="vertical"
             android:paddingBottom="32dp">
 
-            <!-- LOGO / MARCA — mantido igual ao original, mexa aqui se quiser trocar -->
+            <!-- LOGO / MARCA -->
             <LinearLayout
                 android:layout_width="350dp"
                 android:layout_height="200dp"
@@ -52,7 +52,7 @@
                     android:textStyle="bold|italic" />
             </LinearLayout>
 
-            <!-- CAMPO USUÁRIO -->
+            <!-- Campo usuario -->
             <TextView
                 android:id="@+id/usuario"
                 android:layout_width="280dp"
@@ -76,7 +76,7 @@
                 android:padding="12dp"
                 android:textColor="#000000" />
 
-            <!-- CAMPO SENHA -->
+            <!-- Campo senha -->
             <TextView
                 android:id="@+id/senha"
                 android:layout_width="280dp"
@@ -99,7 +99,7 @@
                 android:padding="12dp"
                 android:textColor="#000000" />
 
-            <!-- ESQUECEU A SENHA — alinhado à direita, como no modelo -->
+            <!-- Esqueceu a senha -->
             <TextView
                 android:id="@+id/redefinir_senha"
                 android:layout_width="280dp"
@@ -112,7 +112,7 @@
                 android:textSize="12sp"
                 android:textStyle="bold" />
 
-            <!-- BOTÃO ENTRAR -->
+            <!-- Botão "Entrar" -->
             <Button
                 android:id="@+id/btn_entrar"
                 android:layout_width="280dp"
@@ -126,7 +126,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <!-- DIVISOR "ou" -->
+            <!-- Divisor "ou" -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -136,7 +136,7 @@
                 android:textColor="#888888"
                 android:textSize="14sp" />
 
-            <!-- LOGIN SOCIAL -->
+            <!-- Login social -->
             <LinearLayout
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
@@ -185,7 +185,7 @@
                     android:src="@drawable/ic_linkedin" />
             </LinearLayout>
 
-            <!-- RODAPÉ CADASTRO -->
+            <!-- Rodape cadastro -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
