@@ -13,4 +13,24 @@
         <item name="android:ellipsize">none</item>
         <item name="android:singleLine">true</item>
     </style>
+
+    <style name="HistoryEntryText" parent="TotalsText">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="HistoryEntryDots" parent="TotalsDots">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="HistoryDetailText" parent="TotalsText">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#8A8A87</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="HistoryDetailDots" parent="TotalsDots">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#8A8A87</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 </resources>

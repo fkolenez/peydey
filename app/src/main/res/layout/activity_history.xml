@@ -36,7 +36,7 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@drawable/bg_history_title"
+            android:background="@drawable/bg_banner"
             android:gravity="center"
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
