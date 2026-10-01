@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Navbar fixa no rodapé -->
+        <!-- Navbar fixa no rodapé -->
     <include
         android:id="@+id/navbar"
         layout="@layout/navbar"
