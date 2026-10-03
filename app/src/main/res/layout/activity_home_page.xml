@@ -27,6 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/navbar">
+
         <include layout="@layout/hero_banner" />
 
         <LinearLayout
@@ -125,7 +126,7 @@
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        tools:text="Cafés" />
+                        android:text="Cafés" />
 
                     <TextView
                         android:id="@+id/label_earned_today_coffe"
@@ -135,7 +136,7 @@
                         android:textColor="#8A8A80"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        tools:text="2x Hoje - R$: 10,00" />
+                        android:text="2x Hoje - R$: 10,00" />
                 </LinearLayout>
 
                 <!-- Green add button -->
@@ -186,7 +187,7 @@
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        tools:text="Cagada remunerada" />
+                        android:text="Cagada remunerada" />
 
                     <TextView
                         android:id="@+id/label_earned_today_pop"
@@ -196,7 +197,7 @@
                         android:textColor="#8A8A80"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        tools:text="2x Hoje - R$: 10,00" />
+                        android:text="2x Hoje - R$: 10,00" />
                 </LinearLayout>
 
                 <!-- Green add button -->
@@ -246,7 +247,7 @@
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        tools:text="Conversinha paralela" />
+                        android:text="Conversinha paralela" />
 
                     <TextView
                         android:id="@+id/label_earned_today_chat"
@@ -256,7 +257,7 @@
                         android:textColor="#8A8A80"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        tools:text="2x Hoje - R$: 10,00" />
+                        android:text="2x Hoje - R$: 10,00" />
                 </LinearLayout>
 
                 <!-- Green add button -->

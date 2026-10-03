@@ -1,6 +1,8 @@
 package com.example.peydey;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -22,6 +24,13 @@ public class HomePageActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        NavbarHelper.setup(this, R.id.nav_home);
+
+        ImageView btnProfile = findViewById(R.id.ic_profile);
+        btnProfile.setOnClickListener(v -> {
+            startActivity(new Intent(this, ProfileActivity.class));
         });
 
         TextView label_text_menu = findViewById(R.id.label_text_menu);

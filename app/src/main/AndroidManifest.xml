@@ -25,21 +25,12 @@
             android:name=".HomePageActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-
         <activity
             android:name=".HistoryActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".NavbarActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".HeroBanner"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -52,6 +43,14 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".CreateUserActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".NavBarHelper"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".NavbarHelper"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
